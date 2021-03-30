@@ -11,6 +11,9 @@
 		F7FCB9AC261362F4005F0C52 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7FCB9AB261362F4005F0C52 /* ContentView.swift */; };
 		F7FCB9AE261362F6005F0C52 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F7FCB9AD261362F6005F0C52 /* Assets.xcassets */; };
 		F7FCB9B1261362F6005F0C52 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F7FCB9B0261362F6005F0C52 /* Preview Assets.xcassets */; };
+		F7FCB9BD26136370005F0C52 /* MyPaletteView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7FCB9BC26136370005F0C52 /* MyPaletteView.swift */; };
+		F7FCB9C326136387005F0C52 /* MySliderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7FCB9C226136387005F0C52 /* MySliderView.swift */; };
+		F7FCB9CD261368FD005F0C52 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7FCB9CC261368FD005F0C52 /* HomeView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -20,6 +23,9 @@
 		F7FCB9AD261362F6005F0C52 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F7FCB9B0261362F6005F0C52 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		F7FCB9B2261362F6005F0C52 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F7FCB9BC26136370005F0C52 /* MyPaletteView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyPaletteView.swift; sourceTree = "<group>"; };
+		F7FCB9C226136387005F0C52 /* MySliderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MySliderView.swift; sourceTree = "<group>"; };
+		F7FCB9CC261368FD005F0C52 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -52,6 +58,7 @@
 		F7FCB9A8261362F4005F0C52 /* SwiftUI-SSOT */ = {
 			isa = PBXGroup;
 			children = (
+				F7FCB9CB261368EC005F0C52 /* Screens */,
 				F7FCB9A9261362F4005F0C52 /* SwiftUI_SSOTApp.swift */,
 				F7FCB9AB261362F4005F0C52 /* ContentView.swift */,
 				F7FCB9AD261362F6005F0C52 /* Assets.xcassets */,
@@ -67,6 +74,40 @@
 				F7FCB9B0261362F6005F0C52 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		F7FCB9B92613632F005F0C52 /* Widgets */ = {
+			isa = PBXGroup;
+			children = (
+				F7FCB9BB26136346005F0C52 /* MyPalette */,
+				F7FCB9BA2613633B005F0C52 /* MySlider */,
+			);
+			path = Widgets;
+			sourceTree = "<group>";
+		};
+		F7FCB9BA2613633B005F0C52 /* MySlider */ = {
+			isa = PBXGroup;
+			children = (
+				F7FCB9C226136387005F0C52 /* MySliderView.swift */,
+			);
+			path = MySlider;
+			sourceTree = "<group>";
+		};
+		F7FCB9BB26136346005F0C52 /* MyPalette */ = {
+			isa = PBXGroup;
+			children = (
+				F7FCB9BC26136370005F0C52 /* MyPaletteView.swift */,
+			);
+			path = MyPalette;
+			sourceTree = "<group>";
+		};
+		F7FCB9CB261368EC005F0C52 /* Screens */ = {
+			isa = PBXGroup;
+			children = (
+				F7FCB9B92613632F005F0C52 /* Widgets */,
+				F7FCB9CC261368FD005F0C52 /* HomeView.swift */,
+			);
+			path = Screens;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -138,7 +179,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F7FCB9C326136387005F0C52 /* MySliderView.swift in Sources */,
 				F7FCB9AC261362F4005F0C52 /* ContentView.swift in Sources */,
+				F7FCB9BD26136370005F0C52 /* MyPaletteView.swift in Sources */,
+				F7FCB9CD261368FD005F0C52 /* HomeView.swift in Sources */,
 				F7FCB9AA261362F4005F0C52 /* SwiftUI_SSOTApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
