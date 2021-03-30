@@ -14,6 +14,7 @@
 		F7FCB9BD26136370005F0C52 /* MyPaletteView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7FCB9BC26136370005F0C52 /* MyPaletteView.swift */; };
 		F7FCB9C326136387005F0C52 /* MySliderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7FCB9C226136387005F0C52 /* MySliderView.swift */; };
 		F7FCB9CD261368FD005F0C52 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7FCB9CC261368FD005F0C52 /* HomeView.swift */; };
+		F7FD54582613764400CCEB85 /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7FD54572613764400CCEB85 /* HomeViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,7 @@
 		F7FCB9BC26136370005F0C52 /* MyPaletteView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyPaletteView.swift; sourceTree = "<group>"; };
 		F7FCB9C226136387005F0C52 /* MySliderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MySliderView.swift; sourceTree = "<group>"; };
 		F7FCB9CC261368FD005F0C52 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		F7FD54572613764400CCEB85 /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -106,6 +108,7 @@
 			children = (
 				F7FCB9B92613632F005F0C52 /* Widgets */,
 				F7FCB9CC261368FD005F0C52 /* HomeView.swift */,
+				F7FD54572613764400CCEB85 /* HomeViewModel.swift */,
 			);
 			path = Screens;
 			sourceTree = "<group>";
@@ -180,6 +183,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				F7FCB9C326136387005F0C52 /* MySliderView.swift in Sources */,
+				F7FD54582613764400CCEB85 /* HomeViewModel.swift in Sources */,
 				F7FCB9AC261362F4005F0C52 /* ContentView.swift in Sources */,
 				F7FCB9BD26136370005F0C52 /* MyPaletteView.swift in Sources */,
 				F7FCB9CD261368FD005F0C52 /* HomeView.swift in Sources */,
