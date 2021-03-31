@@ -47,12 +47,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		F76723442614A92B0010C77D /* Shared */ = {
+		F76723442614A92B0010C77D /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
+				F7FD54572613764400CCEB85 /* HomeViewModel.swift */,
 				F76723452614A94B0010C77D /* BaseViewModel.swift */,
+				F76723412614A8DD0010C77D /* MyPaletteViewModel.swift */,
+				F767233E2614A0070010C77D /* MySliderViewModel.swift */,
 			);
-			path = Shared;
+			path = ViewModel;
 			sourceTree = "<group>";
 		};
 		F7FCB99D261362F4005F0C52 = {
@@ -74,8 +77,8 @@
 		F7FCB9A8261362F4005F0C52 /* SwiftUI-SSOT */ = {
 			isa = PBXGroup;
 			children = (
-				F76723442614A92B0010C77D /* Shared */,
-				F7FCB9CB261368EC005F0C52 /* Screens */,
+				F7FCB9CB261368EC005F0C52 /* View */,
+				F76723442614A92B0010C77D /* ViewModel */,
 				F7FCB9A9261362F4005F0C52 /* SwiftUI_SSOTApp.swift */,
 				F7FCB9AB261362F4005F0C52 /* ContentView.swift */,
 				F7FCB9AD261362F6005F0C52 /* Assets.xcassets */,
@@ -93,41 +96,14 @@
 			path = "Preview Content";
 			sourceTree = "<group>";
 		};
-		F7FCB9B92613632F005F0C52 /* Widgets */ = {
+		F7FCB9CB261368EC005F0C52 /* View */ = {
 			isa = PBXGroup;
 			children = (
-				F7FCB9BB26136346005F0C52 /* MyPalette */,
-				F7FCB9BA2613633B005F0C52 /* MySlider */,
-			);
-			path = Widgets;
-			sourceTree = "<group>";
-		};
-		F7FCB9BA2613633B005F0C52 /* MySlider */ = {
-			isa = PBXGroup;
-			children = (
-				F7FCB9C226136387005F0C52 /* MySliderView.swift */,
-				F767233E2614A0070010C77D /* MySliderViewModel.swift */,
-			);
-			path = MySlider;
-			sourceTree = "<group>";
-		};
-		F7FCB9BB26136346005F0C52 /* MyPalette */ = {
-			isa = PBXGroup;
-			children = (
-				F7FCB9BC26136370005F0C52 /* MyPaletteView.swift */,
-				F76723412614A8DD0010C77D /* MyPaletteViewModel.swift */,
-			);
-			path = MyPalette;
-			sourceTree = "<group>";
-		};
-		F7FCB9CB261368EC005F0C52 /* Screens */ = {
-			isa = PBXGroup;
-			children = (
-				F7FCB9B92613632F005F0C52 /* Widgets */,
 				F7FCB9CC261368FD005F0C52 /* HomeView.swift */,
-				F7FD54572613764400CCEB85 /* HomeViewModel.swift */,
+				F7FCB9BC26136370005F0C52 /* MyPaletteView.swift */,
+				F7FCB9C226136387005F0C52 /* MySliderView.swift */,
 			);
-			path = Screens;
+			path = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
