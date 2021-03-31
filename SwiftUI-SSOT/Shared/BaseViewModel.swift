@@ -8,7 +8,7 @@
 import Foundation
 import SwiftUI
 
-class BaseViewModel {
+class BaseViewModel : ObservableObject {
     
     @Binding var redValue: Double
     @Binding var greenValue: Double

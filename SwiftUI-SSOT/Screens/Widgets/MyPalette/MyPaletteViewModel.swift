@@ -8,22 +8,14 @@
 import Foundation
 import SwiftUI
 
-class MyPaletteViewModel : ObservableObject {
+class MyPaletteViewModel : BaseViewModel {
     
-    @Binding var redValue: Double
-    @Binding var greenValue: Double
-    @Binding var blueValue: Double
+    override init(title: String, redValue: Binding<Double>, greenValue: Binding<Double>, blueValue: Binding<Double>) {
+        super.init(title: title, redValue: redValue, greenValue: greenValue, blueValue: blueValue)
+    }
     
-    @Published var title = ""
-    
-    init(redValue: Binding<Double>, greenValue: Binding<Double>, blueValue: Binding<Double>) {
-        self._redValue = redValue
-        self._greenValue = greenValue
-        self._blueValue = blueValue
-        
-        DispatchQueue.main.asyncAfter(deadline: .now() + 0) {
-            self.title = "My Palette"
-        }
+    convenience init(redValue: Binding<Double>, greenValue: Binding<Double>, blueValue: Binding<Double>) {
+        self.init(title: "My Palette", redValue: redValue, greenValue: greenValue, blueValue: blueValue)
     }
     
 }
