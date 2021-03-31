@@ -9,31 +9,42 @@ import SwiftUI
 
 struct MyPaletteView: View {
     
-    @Binding var redValue: Double
-    @Binding var greenValue: Double
-    @Binding var blueValue: Double
+    @ObservedObject var viewModel: MyPaletteViewModel
+    
+    init(viewModel: MyPaletteViewModel) {
+        self.viewModel = viewModel
+    }
     
     var body: some View {
         
-        Circle()
-            .fill(
-                Color(
-                    red: redValue,
-                    green: greenValue,
-                    blue: blueValue
+        VStack(alignment: .leading) {
+            
+            Text("\(viewModel.title)")
+                .font(.caption)
+                .padding()
+            
+            Circle()
+                .fill(
+                    Color(
+                        red: viewModel.redValue,
+                        green: viewModel.greenValue,
+                        blue: viewModel.blueValue
+                    )
                 )
-            )
-            .frame(width: 200, height: 200)
-        
+                .frame(width: 200, height: 200)
+            
+        }
     }
 }
 
 struct MyPaletteView_Previews: PreviewProvider {
     static var previews: some View {
         MyPaletteView(
-            redValue: .constant(0.0),
-            greenValue: .constant(0.0),
-            blueValue: .constant(0.0)
+            viewModel: MyPaletteViewModel(
+                redValue: .constant(0.0),
+                greenValue: .constant(0.0),
+                blueValue: .constant(0.0)
+            )
         )
     }
 }

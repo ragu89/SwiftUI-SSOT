@@ -19,15 +19,19 @@ struct HomeView: View {
         VStack {
             
             MyPaletteView(
-                redValue: $viewModel.redValue,
-                greenValue: $viewModel.greenValue,
-                blueValue: $viewModel.blueValue
+                viewModel: MyPaletteViewModel(
+                    redValue: $viewModel.redValue,
+                    greenValue: $viewModel.greenValue,
+                    blueValue: $viewModel.blueValue
+                )
             )
             
             MySliderView(
-                redValue: $viewModel.redValue,
-                greenValue: $viewModel.greenValue,
-                blueValue: $viewModel.blueValue
+                viewModel: MySliderViewModel(
+                    redValue: $viewModel.redValue,
+                    greenValue: $viewModel.greenValue,
+                    blueValue: $viewModel.blueValue
+                )
             )
             
         }

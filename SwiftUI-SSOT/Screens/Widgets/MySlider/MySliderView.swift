@@ -9,18 +9,24 @@ import SwiftUI
 
 struct MySliderView: View {
     
-    @Binding var redValue: Double
-    @Binding var greenValue: Double
-    @Binding var blueValue: Double
+    @ObservedObject var viewModel: MySliderViewModel
+    
+    init(viewModel: MySliderViewModel) {
+        self.viewModel = viewModel
+    }
     
     var body: some View {
-        VStack {
+        VStack(alignment: .leading) {
+            
+            Text("\(viewModel.title)")
+                .font(.caption)
+                .padding()
             
             HStack {
                 Text("Red")
                 
                 Slider(
-                    value: $redValue,
+                    value: viewModel.$redValue,
                     in: 0...1
                 )
             }.padding()
@@ -29,7 +35,7 @@ struct MySliderView: View {
                 Text("Green")
                 
                 Slider(
-                    value: $greenValue,
+                    value: viewModel.$greenValue,
                     in: 0...1
                 )
             }.padding()
@@ -38,7 +44,7 @@ struct MySliderView: View {
                 Text("Blue")
                 
                 Slider(
-                    value: $blueValue,
+                    value: viewModel.$blueValue,
                     in: 0...1
                 )
             }.padding()
@@ -50,9 +56,11 @@ struct MySliderView: View {
 struct MySliderView_Previews: PreviewProvider {
     static var previews: some View {
         MySliderView(
-            redValue: .constant(0.0),
-            greenValue: .constant(0.0),
-            blueValue: .constant(0.0)
+            viewModel: MySliderViewModel(
+                redValue: .constant(0.0),
+                greenValue: .constant(0.0),
+                blueValue: .constant(0.0)
+            )
         )
     }
 }

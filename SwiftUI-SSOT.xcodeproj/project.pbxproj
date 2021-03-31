@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		F767233F2614A0070010C77D /* MySliderViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F767233E2614A0070010C77D /* MySliderViewModel.swift */; };
+		F76723422614A8DD0010C77D /* MyPaletteViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F76723412614A8DD0010C77D /* MyPaletteViewModel.swift */; };
+		F76723462614A94B0010C77D /* BaseViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F76723452614A94B0010C77D /* BaseViewModel.swift */; };
 		F7FCB9AA261362F4005F0C52 /* SwiftUI_SSOTApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7FCB9A9261362F4005F0C52 /* SwiftUI_SSOTApp.swift */; };
 		F7FCB9AC261362F4005F0C52 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7FCB9AB261362F4005F0C52 /* ContentView.swift */; };
 		F7FCB9AE261362F6005F0C52 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F7FCB9AD261362F6005F0C52 /* Assets.xcassets */; };
@@ -18,6 +21,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		F767233E2614A0070010C77D /* MySliderViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MySliderViewModel.swift; sourceTree = "<group>"; };
+		F76723412614A8DD0010C77D /* MyPaletteViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyPaletteViewModel.swift; sourceTree = "<group>"; };
+		F76723452614A94B0010C77D /* BaseViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewModel.swift; sourceTree = "<group>"; };
 		F7FCB9A6261362F4005F0C52 /* SwiftUI-SSOT.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "SwiftUI-SSOT.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F7FCB9A9261362F4005F0C52 /* SwiftUI_SSOTApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUI_SSOTApp.swift; sourceTree = "<group>"; };
 		F7FCB9AB261362F4005F0C52 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -41,6 +47,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		F76723442614A92B0010C77D /* Shared */ = {
+			isa = PBXGroup;
+			children = (
+				F76723452614A94B0010C77D /* BaseViewModel.swift */,
+			);
+			path = Shared;
+			sourceTree = "<group>";
+		};
 		F7FCB99D261362F4005F0C52 = {
 			isa = PBXGroup;
 			children = (
@@ -60,6 +74,7 @@
 		F7FCB9A8261362F4005F0C52 /* SwiftUI-SSOT */ = {
 			isa = PBXGroup;
 			children = (
+				F76723442614A92B0010C77D /* Shared */,
 				F7FCB9CB261368EC005F0C52 /* Screens */,
 				F7FCB9A9261362F4005F0C52 /* SwiftUI_SSOTApp.swift */,
 				F7FCB9AB261362F4005F0C52 /* ContentView.swift */,
@@ -91,6 +106,7 @@
 			isa = PBXGroup;
 			children = (
 				F7FCB9C226136387005F0C52 /* MySliderView.swift */,
+				F767233E2614A0070010C77D /* MySliderViewModel.swift */,
 			);
 			path = MySlider;
 			sourceTree = "<group>";
@@ -99,6 +115,7 @@
 			isa = PBXGroup;
 			children = (
 				F7FCB9BC26136370005F0C52 /* MyPaletteView.swift */,
+				F76723412614A8DD0010C77D /* MyPaletteViewModel.swift */,
 			);
 			path = MyPalette;
 			sourceTree = "<group>";
@@ -184,7 +201,10 @@
 			files = (
 				F7FCB9C326136387005F0C52 /* MySliderView.swift in Sources */,
 				F7FD54582613764400CCEB85 /* HomeViewModel.swift in Sources */,
+				F767233F2614A0070010C77D /* MySliderViewModel.swift in Sources */,
 				F7FCB9AC261362F4005F0C52 /* ContentView.swift in Sources */,
+				F76723422614A8DD0010C77D /* MyPaletteViewModel.swift in Sources */,
+				F76723462614A94B0010C77D /* BaseViewModel.swift in Sources */,
 				F7FCB9BD26136370005F0C52 /* MyPaletteView.swift in Sources */,
 				F7FCB9CD261368FD005F0C52 /* HomeView.swift in Sources */,
 				F7FCB9AA261362F4005F0C52 /* SwiftUI_SSOTApp.swift in Sources */,
