@@ -21,8 +21,6 @@ class BaseViewModel : ObservableObject {
         self._greenValue = greenValue
         self._blueValue = blueValue
         
-        DispatchQueue.main.asyncAfter(deadline: .now() + 0) {
-            self.title = title
-        }
+        self.title = title
     }
 }
