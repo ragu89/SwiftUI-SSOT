@@ -7,14 +7,12 @@
 
 import Foundation
 
-class MySliderViewModel: BaseViewModel {
+class MySliderViewModel: ObservableObject {
     
-    override init(title: String) {
-        super.init(title: title)
-    }
+    @Published var title: String
     
-    convenience init() {
-        self.init(title: "My Slider")
+    init() {
+        self.title = "My slider"
     }
     
 }

@@ -9,7 +9,6 @@
 /* Begin PBXBuildFile section */
 		F767233F2614A0070010C77D /* MySliderViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F767233E2614A0070010C77D /* MySliderViewModel.swift */; };
 		F76723422614A8DD0010C77D /* MyPaletteViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F76723412614A8DD0010C77D /* MyPaletteViewModel.swift */; };
-		F76723462614A94B0010C77D /* BaseViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F76723452614A94B0010C77D /* BaseViewModel.swift */; };
 		F7EF97C22619093000A925F2 /* ColorSettings.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7EF97C12619093000A925F2 /* ColorSettings.swift */; };
 		F7FCB9AA261362F4005F0C52 /* SwiftUI_SSOTApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7FCB9A9261362F4005F0C52 /* SwiftUI_SSOTApp.swift */; };
 		F7FCB9AC261362F4005F0C52 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7FCB9AB261362F4005F0C52 /* ContentView.swift */; };
@@ -24,7 +23,6 @@
 /* Begin PBXFileReference section */
 		F767233E2614A0070010C77D /* MySliderViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MySliderViewModel.swift; sourceTree = "<group>"; };
 		F76723412614A8DD0010C77D /* MyPaletteViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyPaletteViewModel.swift; sourceTree = "<group>"; };
-		F76723452614A94B0010C77D /* BaseViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewModel.swift; sourceTree = "<group>"; };
 		F7EF97C12619093000A925F2 /* ColorSettings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorSettings.swift; sourceTree = "<group>"; };
 		F7FCB9A6261362F4005F0C52 /* SwiftUI-SSOT.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "SwiftUI-SSOT.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F7FCB9A9261362F4005F0C52 /* SwiftUI_SSOTApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUI_SSOTApp.swift; sourceTree = "<group>"; };
@@ -53,7 +51,6 @@
 			isa = PBXGroup;
 			children = (
 				F7FD54572613764400CCEB85 /* HomeViewModel.swift */,
-				F76723452614A94B0010C77D /* BaseViewModel.swift */,
 				F76723412614A8DD0010C77D /* MyPaletteViewModel.swift */,
 				F767233E2614A0070010C77D /* MySliderViewModel.swift */,
 			);
@@ -192,7 +189,6 @@
 				F7FCB9AC261362F4005F0C52 /* ContentView.swift in Sources */,
 				F7EF97C22619093000A925F2 /* ColorSettings.swift in Sources */,
 				F76723422614A8DD0010C77D /* MyPaletteViewModel.swift in Sources */,
-				F76723462614A94B0010C77D /* BaseViewModel.swift in Sources */,
 				F7FCB9BD26136370005F0C52 /* MyPaletteView.swift in Sources */,
 				F7FCB9CD261368FD005F0C52 /* HomeView.swift in Sources */,
 				F7FCB9AA261362F4005F0C52 /* SwiftUI_SSOTApp.swift in Sources */,

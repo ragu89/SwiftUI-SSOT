@@ -7,14 +7,12 @@
 
 import Foundation
 
-class MyPaletteViewModel : BaseViewModel {
+class MyPaletteViewModel : ObservableObject {
     
-    override init(title: String) {
-        super.init(title: title)
-    }
+    @Published var title: String
     
-    convenience init() {
-        self.init(title: "My Palette")
+    init() {
+        self.title = "My palette"
     }
     
 }
