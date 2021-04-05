@@ -10,6 +10,7 @@
 		F767233F2614A0070010C77D /* MySliderViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F767233E2614A0070010C77D /* MySliderViewModel.swift */; };
 		F76723422614A8DD0010C77D /* MyPaletteViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F76723412614A8DD0010C77D /* MyPaletteViewModel.swift */; };
 		F76723462614A94B0010C77D /* BaseViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F76723452614A94B0010C77D /* BaseViewModel.swift */; };
+		F7EF97C22619093000A925F2 /* ColorSettings.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7EF97C12619093000A925F2 /* ColorSettings.swift */; };
 		F7FCB9AA261362F4005F0C52 /* SwiftUI_SSOTApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7FCB9A9261362F4005F0C52 /* SwiftUI_SSOTApp.swift */; };
 		F7FCB9AC261362F4005F0C52 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7FCB9AB261362F4005F0C52 /* ContentView.swift */; };
 		F7FCB9AE261362F6005F0C52 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F7FCB9AD261362F6005F0C52 /* Assets.xcassets */; };
@@ -24,6 +25,7 @@
 		F767233E2614A0070010C77D /* MySliderViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MySliderViewModel.swift; sourceTree = "<group>"; };
 		F76723412614A8DD0010C77D /* MyPaletteViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyPaletteViewModel.swift; sourceTree = "<group>"; };
 		F76723452614A94B0010C77D /* BaseViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewModel.swift; sourceTree = "<group>"; };
+		F7EF97C12619093000A925F2 /* ColorSettings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorSettings.swift; sourceTree = "<group>"; };
 		F7FCB9A6261362F4005F0C52 /* SwiftUI-SSOT.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "SwiftUI-SSOT.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F7FCB9A9261362F4005F0C52 /* SwiftUI_SSOTApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUI_SSOTApp.swift; sourceTree = "<group>"; };
 		F7FCB9AB261362F4005F0C52 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -58,6 +60,14 @@
 			path = ViewModel;
 			sourceTree = "<group>";
 		};
+		F7EF97C02619091600A925F2 /* DataObject */ = {
+			isa = PBXGroup;
+			children = (
+				F7EF97C12619093000A925F2 /* ColorSettings.swift */,
+			);
+			path = DataObject;
+			sourceTree = "<group>";
+		};
 		F7FCB99D261362F4005F0C52 = {
 			isa = PBXGroup;
 			children = (
@@ -77,6 +87,7 @@
 		F7FCB9A8261362F4005F0C52 /* SwiftUI-SSOT */ = {
 			isa = PBXGroup;
 			children = (
+				F7EF97C02619091600A925F2 /* DataObject */,
 				F7FCB9CB261368EC005F0C52 /* View */,
 				F76723442614A92B0010C77D /* ViewModel */,
 				F7FCB9A9261362F4005F0C52 /* SwiftUI_SSOTApp.swift */,
@@ -179,6 +190,7 @@
 				F7FD54582613764400CCEB85 /* HomeViewModel.swift in Sources */,
 				F767233F2614A0070010C77D /* MySliderViewModel.swift in Sources */,
 				F7FCB9AC261362F4005F0C52 /* ContentView.swift in Sources */,
+				F7EF97C22619093000A925F2 /* ColorSettings.swift in Sources */,
 				F76723422614A8DD0010C77D /* MyPaletteViewModel.swift in Sources */,
 				F76723462614A94B0010C77D /* BaseViewModel.swift in Sources */,
 				F7FCB9BD26136370005F0C52 /* MyPaletteView.swift in Sources */,

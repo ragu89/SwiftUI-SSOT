@@ -10,9 +10,14 @@ import SwiftUI
 struct MyPaletteView: View {
     
     @ObservedObject var viewModel: MyPaletteViewModel
+    @ObservedObject var colorSettings: ColorSettings
     
-    init(viewModel: MyPaletteViewModel) {
+    init(
+        viewModel: MyPaletteViewModel,
+        colorSettings: ObservedObject<ColorSettings>
+    ) {
         self.viewModel = viewModel
+        self._colorSettings = colorSettings
     }
     
     var body: some View {
@@ -26,9 +31,9 @@ struct MyPaletteView: View {
             Circle()
                 .fill(
                     Color(
-                        red: viewModel.redValue,
-                        green: viewModel.greenValue,
-                        blue: viewModel.blueValue
+                        red: colorSettings.redValue,
+                        green: colorSettings.greenValue,
+                        blue: colorSettings.blueValue
                     )
                 )
                 .frame(width: 200, height: 200)
@@ -40,11 +45,8 @@ struct MyPaletteView: View {
 struct MyPaletteView_Previews: PreviewProvider {
     static var previews: some View {
         MyPaletteView(
-            viewModel: MyPaletteViewModel(
-                redValue: .constant(0.0),
-                greenValue: .constant(0.0),
-                blueValue: .constant(0.0)
-            )
+            viewModel: MyPaletteViewModel(),
+            colorSettings: ObservedObject.init(wrappedValue: ColorSettings())
         )
     }
 }

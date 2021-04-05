@@ -10,9 +10,14 @@ import SwiftUI
 struct MySliderView: View {
     
     @ObservedObject var viewModel: MySliderViewModel
+    @ObservedObject var colorSettings: ColorSettings
     
-    init(viewModel: MySliderViewModel) {
+    init(
+        viewModel: MySliderViewModel,
+        colorSettings: ObservedObject<ColorSettings>
+    ) {
         self.viewModel = viewModel
+        self._colorSettings = colorSettings
     }
     
     var body: some View {
@@ -26,7 +31,7 @@ struct MySliderView: View {
                 Text("Red")
                 
                 Slider(
-                    value: viewModel.$redValue,
+                    value: $colorSettings.redValue,
                     in: 0...1
                 )
             }.padding()
@@ -35,7 +40,7 @@ struct MySliderView: View {
                 Text("Green")
                 
                 Slider(
-                    value: viewModel.$greenValue,
+                    value: $colorSettings.greenValue,
                     in: 0...1
                 )
             }.padding()
@@ -44,7 +49,7 @@ struct MySliderView: View {
                 Text("Blue")
                 
                 Slider(
-                    value: viewModel.$blueValue,
+                    value: $colorSettings.blueValue,
                     in: 0...1
                 )
             }.padding()
@@ -56,11 +61,8 @@ struct MySliderView: View {
 struct MySliderView_Previews: PreviewProvider {
     static var previews: some View {
         MySliderView(
-            viewModel: MySliderViewModel(
-                redValue: .constant(0.0),
-                greenValue: .constant(0.0),
-                blueValue: .constant(0.0)
-            )
+            viewModel: MySliderViewModel(),
+            colorSettings: ObservedObject.init(wrappedValue: ColorSettings())
         )
     }
 }

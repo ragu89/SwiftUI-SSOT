@@ -9,7 +9,8 @@ import SwiftUI
 
 struct HomeView: View {
     
-    @ObservedObject var viewModel: HomeViewModel
+    @ObservedObject private var viewModel: HomeViewModel
+    @StateObject private var colorSettings = ColorSettings()
     
     init(viewModel: HomeViewModel) {
         self.viewModel = viewModel
@@ -19,19 +20,13 @@ struct HomeView: View {
         VStack {
             
             MyPaletteView(
-                viewModel: MyPaletteViewModel(
-                    redValue: $viewModel.redValue,
-                    greenValue: $viewModel.greenValue,
-                    blueValue: $viewModel.blueValue
-                )
+                viewModel: MyPaletteViewModel(),
+                colorSettings: .init(wrappedValue: colorSettings)
             )
             
             MySliderView(
-                viewModel: MySliderViewModel(
-                    redValue: $viewModel.redValue,
-                    greenValue: $viewModel.greenValue,
-                    blueValue: $viewModel.blueValue
-                )
+                viewModel: MySliderViewModel(),
+                colorSettings: .init(wrappedValue: colorSettings)
             )
             
         }

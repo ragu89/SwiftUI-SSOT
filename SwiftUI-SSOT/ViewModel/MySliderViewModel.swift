@@ -6,16 +6,15 @@
 //
 
 import Foundation
-import SwiftUI
 
 class MySliderViewModel: BaseViewModel {
     
-    override init(title: String, redValue: Binding<Double>, greenValue: Binding<Double>, blueValue: Binding<Double>) {
-        super.init(title: title, redValue: redValue, greenValue: greenValue, blueValue: blueValue)
+    override init(title: String) {
+        super.init(title: title)
     }
     
-    convenience init(redValue: Binding<Double>, greenValue: Binding<Double>, blueValue: Binding<Double>) {
-        self.init(title: "My Slider", redValue: redValue, greenValue: greenValue, blueValue: blueValue)
+    convenience init() {
+        self.init(title: "My Slider")
     }
     
 }
